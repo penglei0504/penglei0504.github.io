@@ -1,5 +1,5 @@
 ---
-title: "ASNT Foundation Student Travel Grant"
+title: "2025 ASNT Foundation Student Travel Grant"
 collection: awards
 type: "ASNT 2025 Research Symposium"
 venue: " Indianapolis, Indiana."
