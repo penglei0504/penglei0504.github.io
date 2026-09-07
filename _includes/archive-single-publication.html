@@ -1,0 +1,9 @@
+{% include base_path %}
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+    </h2>
+    {% include publication-details.html publication=post %}
+  </article>
+</div>

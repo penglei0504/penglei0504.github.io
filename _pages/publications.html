@@ -11,7 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign entries = site.publications | sort: 'path' %}
+{% assign entries = site.publications | sort: 'display_order' %}
 
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
@@ -24,12 +24,12 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include archive-single-publication.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in entries %}
-    {% include archive-single.html %}
+    {% include archive-single-publication.html %}
   {% endfor %}
 {% endif %}
 
