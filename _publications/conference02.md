@@ -1,34 +1,9 @@
 ---
-
-
-
-title: "In-situ Temperature Monitoring Using an Eddy Current Sensor Array with Full Matrix Capture Method"
-
-
-
+title: "Hydrogen Induced Cracking Inline Inspection using Flexible and Differential Capacitive Sensors Array"
 collection: publications
-
-
-
 category: conferences
-
-
-
-date: Dec. 2024
-
-
-
-venue: 'ASNT Research Symposium 2024 Proceedings'
-
-
-
-citation: 'L. Peng, B. Edward, M. Saptarshi, T. Joe, S. David, and D. Yiming, “In-situ Temperature Monitoring Using an Eddy Current Sensor Array with Full Matrix Capture Method,” in ASNT Research Symposium 2024 Proceedings, Dec. 2024. doi: https://doi.org/10.32548/RS.2024.025.'
-
-
-
+date: Jun. 2023
+venue: 'ASNT Research Symposium 2023 Proceedings'
+citation: 'L. Peng, M. Subrata, and D. Yiming, “Hydrogen Induced Cracking Inline Inspection using Flexible and Differential Capacitive Sensors Array,” in ASNT Research Symposium 2023 Proceedings, Jun. 2023.'
+display_order: 2
 ---
-
-
-
-
-

@@ -1,11 +1,8 @@
 name: Scrape Talk Locations
 
+# Manual runs only; automatic talk-location scraping is disabled.
 on:
-  push:
-    paths:
-      - 'talks/**'
-      - '_talks/**'
-      - 'talkmap.ipynb'
+  workflow_dispatch:
 
 jobs:
   build:

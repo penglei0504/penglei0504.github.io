@@ -11,6 +11,18 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% assign presentations = site.talks | sort: 'display_order' %}
+
+<h2>Oral Presentations</h2>
+{% for post in presentations %}
+  {% if post.type == 'Oral Presentation' %}
+    {% include archive-single-talk.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Poster Presentations</h2>
+{% for post in presentations %}
+  {% if post.type == 'Poster Presentation' %}
+    {% include archive-single-talk.html %}
+  {% endif %}
 {% endfor %}

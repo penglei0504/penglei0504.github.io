@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Lei’s personal website"
+title                    : "Lei Peng"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Lei Lei"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Lei Peng"
+description              : &description "Lei Peng is a Ph.D. candidate in Electrical and Computer Engineering at Michigan State University researching electromagnetic sensing and nondestructive evaluation."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://penglei0504.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,13 +24,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Lei"
+  name             : "Lei Peng"
   pronouns         : # example: "she/her"  
-  bio              : # "Short biography for the left-hand sidebar"
+  bio              : "Ph.D. candidate in Electrical and Computer Engineering; Research Assistant"
   location         : "East Lansing. MI. US"
   employer         : "Michigan State University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "penglei1@msu.edu"
 
   # Academic websites
   academia         : # URL

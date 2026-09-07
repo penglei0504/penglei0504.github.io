@@ -7,6 +7,12 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+{% assign awards = site.teaching | sort: 'display_order' %}
+{% for post in awards %}
+  <div class="list__item">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      <h2 class="archive__item-title" itemprop="headline"><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a></h2>
+      <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
+    </article>
+  </div>
 {% endfor %}

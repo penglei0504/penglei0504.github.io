@@ -1,0 +1,16 @@
+{% assign publication = include.publication %}
+{% if publication.publication_details_unconfirmed %}
+  <p>Publication details unconfirmed.</p>
+{% elsif publication.publication_status %}
+  <p>{{ publication.publication_status }}{% if publication.venue %} in <i>{{ publication.venue }}</i>{% endif %}.</p>
+{% elsif publication.venue and publication.date %}
+  <p>Published in <i>{{ publication.venue }}</i>, {{ publication.date | date: "%Y" }}.</p>
+{% else %}
+  <p>Publication details incomplete.</p>
+{% endif %}
+{% if publication.citation %}
+  <p>Recommended citation: {{ publication.citation }}</p>
+{% endif %}
+{% if publication.doi %}
+  <p><a href="https://doi.org/{{ publication.doi | escape }}">Publisher / DOI</a></p>
+{% endif %}
