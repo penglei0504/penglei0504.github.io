@@ -1,0 +1,31 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+projects_ui: true
+---
+
+<p>Designs, prototypes, and implementations in sensing, instrumentation, and engineering.</p>
+
+{% assign projects = site.pages | where: "project", true | sort: "project_order" %}
+{% if projects.size > 0 %}
+  {% assign categories = projects | map: "project_category" | compact | uniq %}
+  {% if categories.size > 0 %}
+  <nav class="project-categories" aria-label="Project categories">
+    {% for category in categories %}
+    <a href="#category-{{ category | slugify }}">{{ category | escape }}</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+  {% for category in categories %}
+    <h2 id="category-{{ category | slugify }}">{{ category | escape }}</h2>
+    {% assign category_projects = projects | where: "project_category", category %}
+    {% include project-cards.html projects=category_projects %}
+  {% endfor %}
+  {% assign uncategorized = projects | where: "project_category", nil %}
+  {% include project-cards.html projects=uncategorized %}
+{% else %}
+  <p>Project details and demonstrations will be added here as documentation becomes available.</p>
+  <p>For funded research programs, visit <a href="{{ site.baseurl }}/portfolio/">Research</a>.</p>
+{% endif %}

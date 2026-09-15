@@ -1,0 +1,20 @@
+{% if include.projects.size > 0 %}
+<div class="project-grid">
+  {% assign card_limit = include.limit | default: include.projects.size %}
+  {% for project in include.projects limit:card_limit %}
+  <article class="project-card">
+    {% if project.cover %}
+    <a class="project-card__image-link" href="{{ site.baseurl }}{{ project.url }}" tabindex="-1" aria-hidden="true">
+      <img class="project-card__image" src="{{ site.baseurl }}{{ project.cover }}" alt="" loading="lazy" decoding="async" width="640" height="400">
+    </a>
+    {% endif %}
+    <div class="project-card__body">
+      {% if project.project_category %}<p class="project-card__category">{{ project.project_category | escape }}</p>{% endif %}
+      <h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title | escape }}</a></h3>
+      <p>{{ project.summary | escape }}</p>
+      <a href="{{ site.baseurl }}{{ project.url }}" aria-label="View project: {{ project.title | escape }}">View Project <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endif %}

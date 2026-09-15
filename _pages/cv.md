@@ -70,23 +70,15 @@ Academic Service
 ======
 ### Journal Reviewer
 
-* IEEE Transactions on Industrial Informatics
-* IEEE Sensors Journal
-* IEEE Transactions on Magnetics
-* Results In Engineering
-* NDT&E International
-* Measurement
-* Process Safety and Environmental Protection
-* Nondestructive Testing and Evaluation
-* Research In Nondestructive Testing and Evaluation
-* Materials Evaluation
-* IEEE Open Journal of Instrumentation & Measurement
-* Advances In Materials and Processing Technologies
+{% for journal in site.data.academic_service.journals %}
+* {{ journal }}
+{% endfor %}
 
 ### Conference Reviewer
 
-* The 28th International Workshop on Electromagnetic Nondestructive Evaluation
-* The 22nd International Symposium on Applied Electromagnetics and Mechanics
+{% for conference in site.data.academic_service.conferences %}
+* {{ conference }}
+{% endfor %}
 
 Professional Memberships
 ======

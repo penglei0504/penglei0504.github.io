@@ -1,0 +1,15 @@
+{% for item in include.items %}
+<figure class="project-figure">
+  {% if item.type == 'image' %}
+  <img src="{{ site.baseurl }}{{ item.src }}" alt="{{ item.alt | escape }}" loading="lazy" decoding="async">
+  {% elsif item.type == 'video' %}
+  <video controls playsinline preload="metadata"{% if item.poster %} poster="{{ site.baseurl }}{{ item.poster }}"{% endif %}>
+    <source src="{{ site.baseurl }}{{ item.src }}" type="{{ item.mime | escape }}">
+    <a href="{{ site.baseurl }}{{ item.src }}">Download video</a>
+  </video>
+  {% elsif item.type == 'external-video' %}
+  <a href="{{ item.url | escape }}">{{ item.label | default: 'Watch demonstration' | escape }}</a>
+  {% endif %}
+  {% if item.caption %}<figcaption>{{ item.caption | escape }}</figcaption>{% endif %}
+</figure>
+{% endfor %}

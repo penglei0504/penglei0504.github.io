@@ -2,6 +2,7 @@
 permalink: /
 title: "Lei Peng"
 author_profile: true
+projects_ui: true
 redirect_from: 
   - /about/
   - /about.html
@@ -21,3 +22,24 @@ My work includes flexible and stretchable sensor arrays, in-situ temperature mon
 - In-situ monitoring of metal additive manufacturing processes.
 - Pipeline and rail inspection, including hydrogen pipeline integrity.
 - Learning-based defect detection and characterization.
+
+{% assign featured_projects = site.pages | where: "project", true | where: "featured", true | sort: "project_order" %}
+{% if featured_projects.size > 0 %}
+## Featured Projects
+
+{% include project-cards.html projects=featured_projects limit=6 %}
+
+[View all projects]({{ site.baseurl }}/projects/)
+{% endif %}
+
+## Publications
+
+My publications focus on electromagnetic sensing, sensor arrays, and nondestructive evaluation. Recent work includes flexible MFL arrays for bent-pipe inspection and a shape-reconstruction technique using flexible differential inductive sensor arrays, accepted in September 2026.
+
+[Full publication list]({{ site.baseurl }}/publications/) · [Google Scholar]({{ site.author.googlescholar }})
+
+## Academic Service
+
+I have served as a reviewer for {{ site.data.academic_service.journals.size }} journals, including *Engineering Applications of Artificial Intelligence*, *IEEE Transactions on Instrumentation and Measurement*, and *NDT&E International*, and for {{ site.data.academic_service.conferences.size }} conferences.
+
+[Full reviewer service]({{ site.baseurl }}/cv/#academic-service)

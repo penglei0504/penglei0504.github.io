@@ -1,0 +1,30 @@
+/* Scoped additions; existing site typography and theme colors are inherited. */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 1.5rem;
+}
+.project-card {
+  min-width: 0;
+  border: 1px solid currentColor;
+  border-radius: .35rem;
+  overflow: hidden;
+}
+.project-card__image-link { display: block; }
+.project-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  object-fit: contain;
+}
+.project-card__body { padding: 1rem; }
+.project-card__body h3 { margin: 0 0 .65rem; }
+.project-card__body p { margin: 0 0 .8rem; }
+.project-card__category { font-size: .8em; font-weight: 600; }
+.project-categories { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; margin: 1rem 0; }
+.project-figure { margin: 1.25rem 0; }
+.project-figure img, .project-figure video { display: block; max-width: 100%; height: auto; }
+.project-figure figcaption { margin-top: .4rem; font-size: .85em; }
+.project-card a:focus-visible, .project-categories a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }

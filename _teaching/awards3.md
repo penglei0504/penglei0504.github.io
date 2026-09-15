@@ -8,5 +8,6 @@ excerpt: "First place in the Department of ECE. Award for Outstanding Graduate R
 ---
 
 - **Award period:** 2025–26
+- **Institution:** Michigan State University, College of Engineering
 
 First place in the Department of ECE. Award for Outstanding Graduate Research by an Engineering PhD Student.

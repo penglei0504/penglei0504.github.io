@@ -1,0 +1,31 @@
+---
+layout: archive
+---
+
+{% if page.project_category %}<p class="project-card__category">{{ page.project_category | escape }}</p>{% endif %}
+<p>{{ page.summary | escape }}</p>
+
+{% if page.cover %}
+<figure class="project-figure">
+  <img src="{{ site.baseurl }}{{ page.cover }}" alt="{{ page.cover_alt | escape }}" decoding="async">
+  {% if page.cover_caption %}<figcaption>{{ page.cover_caption | escape }}</figcaption>{% endif %}
+</figure>
+{% endif %}
+
+{{ content }}
+
+{% if page.media.size > 0 %}
+<h2>Media</h2>
+{% include project-media.html items=page.media %}
+{% endif %}
+
+{% if page.related_publications.size > 0 %}
+<h2>Related Publications</h2>
+<ul>
+{% for related in page.related_publications %}
+  <li><a href="{{ site.baseurl }}{{ related.url }}">{{ related.title | escape }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+<p><a href="{{ site.baseurl }}/projects/">All projects</a></p>
