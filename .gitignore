@@ -21,3 +21,7 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Local CV and project reference material (keep on this computer)
+/My_CV/
+/My_project/
