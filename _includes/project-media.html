@@ -2,7 +2,7 @@
 {% for item in include.items %}
 <figure class="project-figure">
   {% if item.type == 'image' %}
-  <a href="{{ site.baseurl }}{{ item.full | default: item.src }}" aria-label="View larger image: {{ item.alt | escape }}">
+  <a class="project-image-link" href="{{ site.baseurl }}{{ item.full | default: item.src }}" aria-label="View larger image: {{ item.alt | escape }}">
     <img src="{{ site.baseurl }}{{ item.src }}" alt="{{ item.alt | escape }}" loading="lazy" decoding="async">
   </a>
   {% elsif item.type == 'video' %}

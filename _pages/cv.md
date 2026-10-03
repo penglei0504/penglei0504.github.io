@@ -13,7 +13,7 @@ redirect_from:
 
 Education
 ======
-* Ph. D candidate, Electrical and Computer Engineering, Michigan State University, SEP 2021 – PRESENT
+* Ph.D., Electrical and Computer Engineering, Michigan State University
 * Master of Engineering, Electrical and Electronic Engineering, Shanghaitech University, Shanghai, China; University of the Chinese Academy of Sciences, China, SEP 2018 – JUN 2021
 * Bachelor of Engineering, Control Technology and Instrumentation, Hefei University of Technology, SEP 2012 – JUN 2016
 

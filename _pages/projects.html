@@ -23,7 +23,7 @@ projects_ui: true
     {% assign category_projects = projects | where: "project_category", category %}
     {% include project-cards.html projects=category_projects %}
   {% endfor %}
-  {% assign uncategorized = projects | where: "project_category", nil %}
+  {% assign uncategorized = projects | where_exp: "project", "project.project_category == nil" %}
   {% include project-cards.html projects=uncategorized %}
 {% else %}
   <p>Project details and demonstrations will be added here as documentation becomes available.</p>

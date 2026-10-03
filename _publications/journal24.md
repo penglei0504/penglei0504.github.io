@@ -4,8 +4,8 @@ collection: "publications"
 category: "manuscripts"
 layout: "archive"
 venue: "NDT E Int."
-publication_status: "Under review"
-citation: "L. Peng, N. Zhang, Z. Li, J. Hu, X. Cai, and Y. Deng, “Pipeline Inspection Using Flexible Differential Capacitive Sensors Array,” NDT E Int., 2026, under review."
+publication_status: "Accepted September 2026"
+citation: "L. Peng, N. Zhang, Z. Li, J. Hu, X. Cai, and Y. Deng, “Pipeline Inspection Using Flexible Differential Capacitive Sensors Array,” NDT E Int., 2026, accepted September 2026."
 display_order: 7
 ---
 

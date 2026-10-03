@@ -124,6 +124,14 @@ def main():
                 # This dormant, pre-existing layout is outside the update scope.
                 (warnings if rel == "_layouts/cv-layout.html" and url == "/assets/css/cv-layout.css" else errors).append(issue)
     projects = {rel: data for rel, data in docs.items() if data.get("project") is True}
+    project_listing = (ROOT / "_pages/projects.html").read_text(encoding="utf-8")
+    # Jekyll's where filter returns its entire input when the value is nil.
+    # Prevent categorized cards from being repeated as uncategorized cards.
+    if re.search(r'where:\s*[\"\']project_category[\"\']\s*,\s*nil', project_listing):
+        errors.append("Projects listing uses where with nil, which repeats categorized projects")
+    project_urls = [data["permalink"] for data in projects.values() if data.get("permalink")]
+    if len(project_urls) != len(set(project_urls)):
+        errors.append("Duplicate project URLs")
     for rel, project in projects.items():
         for field in ["title", "summary", "permalink", "project_order"]:
             if not project.get(field):
