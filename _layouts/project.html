@@ -5,7 +5,7 @@ layout: archive
 {% if page.project_category %}<p class="project-card__category">{{ page.project_category | escape }}</p>{% endif %}
 <p>{{ page.summary | escape }}</p>
 
-{% if page.cover %}
+{% if page.cover and page.show_cover != false %}
 <figure class="project-figure">
   <img src="{{ site.baseurl }}{{ page.cover }}" alt="{{ page.cover_alt | escape }}" decoding="async">
   {% if page.cover_caption %}<figcaption>{{ page.cover_caption | escape }}</figcaption>{% endif %}

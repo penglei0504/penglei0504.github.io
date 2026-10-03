@@ -4,7 +4,14 @@
 
 ## Current source inventory
 
-On 2026-09-15, `My_CV/` contained `CV_Lei Peng 2.docx` and `My_project/` was empty. No project cards, detail pages, or media were invented. The Projects page is ready; Featured Projects appears automatically when at least one documented featured project exists.
+On 2026-10-03, two documented project folders were published through website-facing copies:
+
+- `My_project/1/1.docx`: In-line Robotic Platform for Intelligent Pipeline Inspection (`/projects/in-line-robotic-pipeline-inspection/`).
+- `My_project/2/2.docx`: Wireless Portable TMR Array for Eddy Current Imaging (`/projects/wireless-portable-tmr-array/`).
+
+Both are featured. The source Word documents remain authoritative. Preserve their section order and future-work wording. Match `[imgN]` and `[videoN]` directly to filenames in the same folder; preserve placement and group adjacent image placeholders. The manifest records these mappings, cover choices, hashes, and output files. Project 1's unreferenced `img2.png` and `img3.png` were intentionally not copied. No publication relationships were supplied.
+
+Both videos were copied unchanged: Project 1 is 3,134,174 bytes; Project 2 is 15,654,908 bytes. Both are H.264 MP4 with audio, 1280 × 720, embedded with controls and no autoplay or loop. Covers are 800-pixel-wide JPEG derivatives; Project 2's large microscope photographs have 2000-pixel-wide website derivatives. All original source files remain unchanged.
 
 The existing Research section (`_portfolio/`, `/portfolio/`) remains for funded programs. Concrete builds belong to Projects (`_pages/projects/`, `/projects/`). Do not copy funded programs into Projects without evidence of a specific implementation and Lei's contribution.
 
@@ -21,7 +28,7 @@ My_project/
     media/
 ```
 
-The README can provide the official title, short summary, overview, prototype, implementation/setup, results, personal contributions, and captions. Identify the preferred cover and public media. Include related publication URLs only with explicit evidence of the relationship. Omit unsupported sections rather than filling them with guesses. Root-level material is allowed but its project association must be established before use.
+A Word document is also accepted in place of a README; read it completely and follow its media placeholders. The README can provide the official title, short summary, overview, prototype, implementation/setup, results, personal contributions, and captions. Identify the preferred cover and public media. Include related publication URLs only with explicit evidence of the relationship. Omit unsupported sections rather than filling them with guesses. Root-level material is allowed but its project association must be established before use.
 
 ## Updating from source
 
@@ -55,6 +62,7 @@ project_category: "Sensors & Instrumentation"
 cover: /images/projects/stable-slug/cover.jpg
 cover_alt: "Description of the visible prototype"
 cover_caption: "Optional source-supported caption"
+show_cover: false # Omit/true to show a hero; false when the cover also appears at a source placeholder
 media:
   - type: image
     src: /images/projects/stable-slug/setup.jpg
@@ -75,7 +83,7 @@ related_publications:
 
 `project_category` is optional; omit it rather than supplying an empty string. Use only justified categories (for example Sensors & Instrumentation, Electronics, Embedded Systems, AI / Software, Personal Engineering Projects, or Research Projects). Categories appear only when used. `project_order` controls order; keep existing orders stable when adding a project. Images and GIFs use `type: image`; local videos use `type: video`; external videos are ordinary links, not autoplaying embeds.
 
-Write supported sections in the Markdown body: Overview, System / Prototype, Experimental Setup / Implementation, Results / Demonstration, Key Contributions. For images beside a section, use Markdown figures or `{% include project-media.html items=page.setup_media %}` with a matching metadata list. The layout adds the general Media and Related Publications sections only if data exists.
+Write supported sections in the Markdown body: Overview, System / Prototype, Experimental Setup / Implementation, Results / Demonstration, Key Contributions. For images beside a section, use Markdown figures or `{% include project-media.html items=page.setup_media %}` with a matching metadata list. Use `gallery=true` on the media include for adjacent image groups; images link to their larger website-facing copy. The layout adds the general Media and Related Publications sections only if data exists.
 
 ## Source manifest format
 

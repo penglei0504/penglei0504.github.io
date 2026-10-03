@@ -1,4 +1,70 @@
 {
   "version": 1,
-  "projects": {}
+  "projects": {
+    "1": {
+      "files": {
+        "1.docx": "34cfeacc675011bf10068951d93bfc20e5cbd27f712b4c635fe870a89d2a4944",
+        "img1.png": "332de61e748fa204ee450dbc52e00b7a1aa5b94a882c323cccf4a1f58f0eb36e",
+        "img2.png": "6dee649a3f22a551ae805168ced471ea62866d7dfd93eeda7da6a1f87eebe9af",
+        "img3.png": "3c4782d742d76cd3fbb2d4dcfe37ed2476683754f843b60a36c03c89e2fef880",
+        "img4.png": "701511c4ec46d5345d6bdc53f23dbe3b40ed16329919c7ce6cf09ca4f841cf10",
+        "img5.png": "ba8ea660765e9314ca3b507dcff33dddd2a3155ef0f8c68137013e0d8759c4a2",
+        "img6.png": "af3a336bc5b76a7c1334372e6b357c0bc5ead755a6ff84885d64276ef2863bb6",
+        "img7.png": "9e8c46f7e054df41895912dc5bb3c58c8a96fe8924f10bae20c521247348fb6c",
+        "video1.mp4": "0826a60051adcf4f25600bf8a8744d75331ab9a953735506cbd428367915c08e"
+      },
+      "outputs": [
+        "_pages/projects/in-line-robotic-pipeline-inspection.md",
+        "images/projects/in-line-robotic-pipeline-inspection/robotic-platform.png",
+        "images/projects/in-line-robotic-pipeline-inspection/control-electronics-schematic.png",
+        "images/projects/in-line-robotic-pipeline-inspection/control-pcb-layout.png",
+        "images/projects/in-line-robotic-pipeline-inspection/adjustable-frame.png",
+        "images/projects/in-line-robotic-pipeline-inspection/future-inspection-concept.png",
+        "images/projects/in-line-robotic-pipeline-inspection/cover.jpg",
+        "files/projects/in-line-robotic-pipeline-inspection/demonstration.mp4"
+      ],
+      "publication_evidence": [],
+      "media_mapping": {
+        "img1": "/images/projects/in-line-robotic-pipeline-inspection/robotic-platform.png",
+        "img4": "/images/projects/in-line-robotic-pipeline-inspection/control-electronics-schematic.png",
+        "img5": "/images/projects/in-line-robotic-pipeline-inspection/control-pcb-layout.png",
+        "img6": "/images/projects/in-line-robotic-pipeline-inspection/adjustable-frame.png",
+        "img7": "/images/projects/in-line-robotic-pipeline-inspection/future-inspection-concept.png",
+        "video1": "/files/projects/in-line-robotic-pipeline-inspection/demonstration.mp4"
+      },
+      "cover_source": "My_project/1/img1.png",
+      "source_document": "My_project/1/1.docx",
+      "unused_source_files": [
+        "img2.png",
+        "img3.png"
+      ]
+    },
+    "2": {
+      "files": {
+        "2.docx": "8a27c1410822c3bfdec2d150252dd7ce34123e5bb578beea6d13a84b3985ba31",
+        "img1.jpg": "15e26eca78170d2d6bd96e268480d9b74a3cdfe9ec277ba68f5631282461e421",
+        "img2.jpg": "b222173f31af643874c8d29eb8e9387ee3a3486c2b636703a6ee1382c1ae9288",
+        "img3.jpg": "d6f0575c59cb25b8886485968c571842c9760d21bed19795c1c9062306d86bdc",
+        "video1.mp4": "194825aa6ae284c8a63ddf3cd103a9961946daa18a00c3948c981a5d3c852434"
+      },
+      "outputs": [
+        "_pages/projects/wireless-portable-tmr-array.md",
+        "images/projects/wireless-portable-tmr-array/wireless-probe.jpg",
+        "images/projects/wireless-portable-tmr-array/tmr-sensor-detail.jpg",
+        "images/projects/wireless-portable-tmr-array/tmr-array-interconnections.jpg",
+        "images/projects/wireless-portable-tmr-array/cover.jpg",
+        "files/projects/wireless-portable-tmr-array/demonstration.mp4"
+      ],
+      "publication_evidence": [],
+      "media_mapping": {
+        "img1": "/images/projects/wireless-portable-tmr-array/wireless-probe.jpg",
+        "img2": "/images/projects/wireless-portable-tmr-array/tmr-sensor-detail.jpg",
+        "img3": "/images/projects/wireless-portable-tmr-array/tmr-array-interconnections.jpg",
+        "video1": "/files/projects/wireless-portable-tmr-array/demonstration.mp4"
+      },
+      "cover_source": "My_project/2/img1.jpg",
+      "source_document": "My_project/2/2.docx",
+      "unused_source_files": []
+    }
+  }
 }
