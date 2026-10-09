@@ -1,0 +1,20 @@
+/* Profile additions and homepage-only presentation; project pages are unchanged. */
+.author__bio--position { line-height: 1.45; }
+.author__bio--position span { display: block; margin-bottom: .35em; overflow-wrap: break-word; }
+.author__institution-logos { display: grid; gap: .8rem; width: min(100%, 210px); margin-top: 1rem; }
+.author__institution-logos img { display: block; width: auto; max-width: 100%; max-height: 125px; height: auto; margin: auto; background: #fff; }
+.collaborator-logos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0; }
+.collaborator-logos > div { display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 100px; padding: .5rem; background: #fff; }
+.collaborator-logos img { display: block; width: auto; max-width: 100%; height: auto; max-height: 90px; }
+.homepage-featured .project-grid { gap: 1rem; margin: .7rem 0 1rem; }
+.homepage-featured .project-card__image { height: 150px; aspect-ratio: auto; object-fit: contain; }
+.homepage-featured .project-card__body { padding: .75rem; }
+.homepage-featured .project-card__body h3 { font-size: 1em; line-height: 1.35; margin-bottom: .45rem; }
+.homepage-featured .project-card__body p { font-size: .9em; margin-bottom: .55rem; }
+.homepage-featured .project-card__body > a { font-size: .9em; }
+@media (max-width: 1100px) {
+  .collaborator-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 400px) {
+  .collaborator-logos { grid-template-columns: 1fr; }
+}

@@ -24,9 +24,19 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Lei Peng"
+  name             : "Lei Peng, Ph.D."
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. in Electrical and Computer Engineering; Research Assistant"
+  bio              : "Postdoctoral Research Associate"
+  bio_lines:
+    - "Postdoctoral Research Associate"
+    - "Lab Manager of Nondestructive Evaluation Lab"
+    - "Department of Electrical and Computer Engineering"
+    - "Michigan State University"
+  logos:
+    - src: "/images/logos/msu.png"
+      alt: "Michigan State University"
+    - src: "/images/logos/msu-ndel.png"
+      alt: "Michigan State University Nondestructive Evaluation Laboratory"
   location         : "East Lansing. MI. US"
   employer         : "Michigan State University"
   uri              : # URL

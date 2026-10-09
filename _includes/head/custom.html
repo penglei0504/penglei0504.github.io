@@ -19,3 +19,7 @@
 {% if page.projects_ui or page.layout == "project" %}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/projects.css">
 {% endif %}
+
+{% if page.author_profile or page.permalink == "/" %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/profile-home.css">
+{% endif %}
